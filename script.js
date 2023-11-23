@@ -1,1 +1,19 @@
-//comment 
+// Write a function that takes an array of words and smashes them together into a sentence and returns the sentence. 
+// You can ignore any need to sanitize words or add punctuation, 
+// but you should add spaces between each word. Be careful, there shouldn't be a space at the beginning or the end of the sentence!
+function smash(words) {
+    function smash (words) {
+        return words.join(" ")
+     };
+}
+
+
+// Write a function which converts the input string to uppercase.
+function makeUpperCase(str) {
+    return str.toUpperCase();
+  }
+
+// Make a simple function called greet that returns the most-famous "hello world!".
+function greet(){
+    return "hello world !";
+}
