@@ -1,3 +1,14 @@
+// Create a function that takes an integer as an argument and returns 
+// "Even" for even numbers or "Odd" for odd numbers
+
+function evenOrOdd(number) {
+    if (number % 2) {
+        return "Odd" 
+} else {
+    return "Even"
+ }
+
+}
 
 
 // Your task is to create a function that does four basic mathematical operations.
@@ -23,7 +34,6 @@ function basicOp(operation, value1, value2)
     }
 }
 console.log(basicOp("+ 5,5"));
-
 
 //  Write a function named setAlarm/set_alarm/set-alarm/setalarm 
 // (depending on language) which receives two parameters. 
