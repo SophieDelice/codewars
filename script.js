@@ -1,10 +1,25 @@
 
+
+// Vowel Count
+// Return the number (count) of vowels in the given string. We will consider a, e, i, o, u as vowels for this Kata (but not y)
+// The input string will only consist of lower case letters and/or spaces.
+
+
+
+
+
+// In a factory a printer prints labels for boxes. For one kind of boxes the printer has to use colors which, for the sake of simplicity, 
+// are named with letters from a to m.The colors used by the printer are recorded in a control string. 
+// For example a "good" control string would be 
+
+
+
+
 //Given an array of integers your solution should find the smallest integer.
 
 class SmallestIntegerFinder {
     findSmallestInt = args => Math.min(...args)
 }
-
 // Write a function that takes an array of numbers and returns 
 // the sum of the numbers. The numbers can be negative or non-integer. 
 // If the array does not contain any numbers then you should return 0.
