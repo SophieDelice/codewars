@@ -4,6 +4,15 @@
 // For example a "good" control string would be 
 
 
+// Convert a Boolean to a String
+// Implement a function which convert the given boolean value into its string representation.
+// Note: Only valid inputs will be given.
+
+function booleanToString(b){
+    //your code here
+    return b.toString();
+  }
+
 // Counting Sheep...
 // Consider an array/list of sheep where some sheep may be missing from their place.
 // We need a function that counts the number of sheep present in the array (true means present).
