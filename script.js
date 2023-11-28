@@ -4,6 +4,18 @@
 // For example a "good" control string would be 
 
 
+// Counting Sheep...
+// Consider an array/list of sheep where some sheep may be missing from their place.
+// We need a function that counts the number of sheep present in the array (true means present).
+
+function countSheeps(sheep) {
+    // TODO
+  return sheep.filter(sheep => !! sheep).length;
+  }
+  
+  const sheeps = [true, true, false, true, false, true, false , false , true];
+  console.log(countSheeps(sheeps)); // Output will be the count of present sheep (e.g., 4)
+
 
 // List Filtering
 // In this kata you will create a function that takes a list of non-negative integers
@@ -12,7 +24,8 @@
 function filter_list(l) {
     return l.filter(item => typeof item === "number" && item >= 0);
   }
-
+const myList = [ 1, 2, "a" , "W" ]; 
+console.log(filter_list(myList));
 
 // Vowel Count
 // Return the number (count) of vowels in the given string. We will consider a, e, i, o, u as vowels for this Kata (but not y)
@@ -34,8 +47,6 @@ function getCount(str) {
     // Return the total count of vowels found in the string
     return count;
   }
-
-
 
 //Given an array of integers your solution should find the smallest integer.
 
