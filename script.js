@@ -1,17 +1,39 @@
+// Printer Error
+// In a factory a printer prints labels for boxes. For one kind of boxes the printer has to use colors which, for the sake of simplicity, 
+// are named with letters from a to m.The colors used by the printer are recorded in a control string. 
+// For example a "good" control string would be 
+
+
+
+// List Filtering
+// In this kata you will create a function that takes a list of non-negative integers
+// and strings and returns a new list with the strings filtered out.
+
+function filter_list(l) {
+    return l.filter(item => typeof item === "number" && item >= 0);
+  }
 
 
 // Vowel Count
 // Return the number (count) of vowels in the given string. We will consider a, e, i, o, u as vowels for this Kata (but not y)
 // The input string will only consist of lower case letters and/or spaces.
 
-
-
-
-
-// In a factory a printer prints labels for boxes. For one kind of boxes the printer has to use colors which, for the sake of simplicity, 
-// are named with letters from a to m.The colors used by the printer are recorded in a control string. 
-// For example a "good" control string would be 
-
+function getCount(str) {
+    // Initialize count to keep track of vowels
+    let count = 0;
+    
+    // Loop through each character in the string
+    for (let i = 0; i < str.length; i++) {
+      // Check if the character is a vowel (a, e, i, o, u)
+      if (str[i] === 'a' || str[i] === 'e' || str[i] === 'i' || str[i] === 'o' || str[i] === 'u') {
+        // If it's a vowel, increment the count
+        count++;
+      }
+    }
+    
+    // Return the total count of vowels found in the string
+    return count;
+  }
 
 
 
