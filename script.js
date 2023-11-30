@@ -4,6 +4,23 @@
 // For example a "good" control string would be 
 
 
+// Beginner - Reduce but Grow
+// Given a non-empty array of integers, return the result of multiplying the values together in order. 
+
+function grow(x) {
+    let result = 1
+    for (let i =0; i < x.length; i++) {
+        result *= x[i]
+
+    }
+
+    return result
+   
+}
+
+const array = [2,4,8]
+console.log(grow(array));
+
 // Reversed sequence
 // Build a function that returns an array of integers from n to 1 where n>0.
 // Example : n=5 --> [5,4,3,2,1]
@@ -15,7 +32,6 @@ const reverseSeq = n => {
     }
     return results;
   };
-
 
 // Convert a Boolean to a String
 // Implement a function which convert the given boolean value into its string representation.
