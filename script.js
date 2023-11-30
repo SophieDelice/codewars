@@ -1,8 +1,14 @@
-// Printer Error
-// In a factory a printer prints labels for boxes. For one kind of boxes the printer has to use colors which, for the sake of simplicity, 
-// are named with letters from a to m.The colors used by the printer are recorded in a control string. 
-// For example a "good" control string would be 
 
+
+// Remove String Spaces
+//  Write a function that removes the spaces from the string, then return the resultant string.
+
+function noSpace(x) {
+    return x.replace(/ /g, '')
+}
+
+const sentenceWithspace = "This is a string with spaces";
+console.log(noSpace(sentenceWithspace));
 
 // Remove exclamation marks
 // Write function RemoveExclamationMarks which removes all exclamation marks from a given string.
