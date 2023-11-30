@@ -4,6 +4,17 @@
 // For example a "good" control string would be 
 
 
+// Remove exclamation marks
+// Write function RemoveExclamationMarks which removes all exclamation marks from a given string.
+
+function removeEclamationMarks(s) {
+    return s.replace( /!/g, "");
+    
+}
+
+const sentence = "Practice ! coding daily !!!";
+console.log(removeEclamationMarks(sentence))
+
 // Beginner - Reduce but Grow
 // Given a non-empty array of integers, return the result of multiplying the values together in order. 
 
