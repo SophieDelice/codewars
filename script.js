@@ -1,4 +1,27 @@
 
+// Odd or Even 
+// Given a list of integers, determine whether the sum of its elements is odd or even.
+// Give your answer as a string matching "odd" or "even".
+// If the input array is empty consider it as: [0] (array with a zero).
+
+
+function oddOrEven(array) {
+  //enter code here
+ let sum = 0;
+
+ // Calculate the sum of all elements in the array using a for loop
+ for (let i = 0; i < array.length; i++) {
+   sum += array[i];
+ }
+
+ // Check if the sum is odd or even and return the result as a string
+return sum % 2 === 0 ? 'even' : 'odd';
+}
+
+console.log(oddOrEven([2, 4, 6]));
+console.log(oddOrEven([1, 3, 5]));
+
+
 // Calculate BMI
 // Write function bmi that calculates body mass index (bmi = weight / height2).
 // if bmi <= 18.5 return "Underweight"
@@ -8,13 +31,12 @@
 
 function bmi(weight, height) {
   const bmiTotal = weight / (height **2 ); 
-  if ( bmiTotal <= 18.5)  return "Underweight";
+  if ( bmiTotal <= 18.5) return "Underweight";
   if (bmiTotal<= 25.0 ) return "Normal"; 
   if (bmiTotal<= 30.0) return "Overweight"; 
   if (bmiTotal > 30 ) return "Obese";
   
 }
-
 
 console.log(bmi( 375, 5.8));
 
