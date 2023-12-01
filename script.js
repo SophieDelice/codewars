@@ -1,9 +1,22 @@
 
+
+// Friend or Foe?
+// Make a program that filters a list of strings and returns a list with only your friends name in it.
+// If a name has exactly 4 letters in it, you can be sure that it has to be a friend of yours! Otherwise, you can be sure he's not...
+
+function friend(friends){
+  return friends.filter( names => names.length === 4)
+  
+}
+
+const namesArray = ["Ryan", "Kieran", "Jason", "Lora",];
+console.log(friend(namesArray));
+
+
 // Odd or Even 
 // Given a list of integers, determine whether the sum of its elements is odd or even.
 // Give your answer as a string matching "odd" or "even".
 // If the input array is empty consider it as: [0] (array with a zero).
-
 
 function oddOrEven(array) {
   //enter code here
