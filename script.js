@@ -1,4 +1,13 @@
 
+//  Opposite number 
+// Very simple, given an integer or a floating-point number, find its opposite.
+
+function opposite(number) {
+  //your code here
+  return -number;
+}
+console.log(opposite(35));
+console.log(opposite(-10)); 
 
 // Friend or Foe?
 // Make a program that filters a list of strings and returns a list with only your friends name in it.
