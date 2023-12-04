@@ -1,4 +1,23 @@
 
+
+// Double Char
+// Given a string, you have to return a string in which each character (case-sensitive) is repeated once.
+
+function doubleChar(str) {
+  let result = '';
+  for (let i = 0; i < str.length; i++) {
+    result += str[i] + str[i];
+  }
+  return result;
+}
+
+// Example usage:
+const inputString = 'food';
+ const doubledString = doubleChar(inputString);
+console.log(doubleChar(inputString));
+
+
+
 //  Opposite number 
 // Very simple, given an integer or a floating-point number, find its opposite.
 
