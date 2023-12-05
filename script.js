@@ -1,5 +1,37 @@
 
 
+// How good are you really?
+// There was a test in your class and you passed it. Congratulations!But you're an ambitious person. 
+// You want to know if you're better than the average student in your class.You receive an array with your peers' test scores. 
+// Now calculate the average and compare your score! Return True if you're better, else False!
+// Note:
+// Your points are not included in the array of your class's points. 
+// For calculating the average point you may add your point to the given array!
+
+
+function betterThanAverage(classPoints, yourPoints) {
+  // Your code here
+  let result = 0; 
+  for( let i= 0; i<classPoints.length; i++) {
+    result += classPoints[i] ; 
+  }
+  let average = (result + yourPoints) / (classPoints.length + 1); 
+
+//   return yourPoints > average; 
+  
+if (yourPoints > average) {
+  return (true);
+} else {
+  return (false);
+}
+  
+}
+// Example usage:
+const yourPoints = 85;
+const classPoints = [70, 65, 80, 90]; // Sample class scores
+const betterThanAverages = betterThanAverage(yourPoints, classPoints);
+console.log(betterThanAverages); // This will output True or False based on the comparison
+
 
 
 // All Star Code Challenge #18
@@ -15,7 +47,6 @@ function strCount(str, letter){
   }
   return result
 }
-
 
 // Parse nice int from char problem
 // You ask a small girl,"How old are you?" She always says, "x years old", where x is a random number between 0 and 9.
