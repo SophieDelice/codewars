@@ -1,5 +1,22 @@
 
 
+
+
+// All Star Code Challenge #18
+// Create a function that accepts a string and a single character, and returns an integer of the count of occurrences 
+// the 2nd argument is found in the first one. If no occurrences can be found, a count of 0 should be returned.
+function strCount(str, letter){  
+  let result = 0; 
+  for ( let i = 0; i< str.length; i++ ) {
+    if (str[i] == letter) {
+      result++
+    }
+
+  }
+  return result
+}
+
+
 // Parse nice int from char problem
 // You ask a small girl,"How old are you?" She always says, "x years old", where x is a random number between 0 and 9.
 // Write a program that returns the girl's age (0-9) as an integer.
@@ -24,7 +41,6 @@ function abbrevName(name){
 
 }
 
-
 // Double Char
 // Given a string, you have to return a string in which each character (case-sensitive) is repeated once.
 
@@ -40,7 +56,6 @@ function doubleChar(str) {
 const inputString = 'food';
  const doubledString = doubleChar(inputString);
 console.log(doubleChar(inputString));
-
 
 
 //  Opposite number 
