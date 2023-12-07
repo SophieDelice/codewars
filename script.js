@@ -1,6 +1,16 @@
 
 
 
+// Third Angle of a Triangle
+// You are given two interior angles (in degrees) of a triangle. Write a function to return the 3rd.
+// Note: only positive integers will be tested. https://en.wikipedia.org/wiki/Triangle
+
+function otherAngle(a, b) {
+  const sum = a + b;
+  return thirdAngle = 180 - sum;
+}
+console.log(otherAngle(105,5))
+
 // Sum The Strings
 // Create a function that takes 2 integers in form of a string as an input, and outputs the sum (also as a string):
 // Notes: If either input is an empty string, consider it as zero. Inputs and the expected output will never exceed the signed 
