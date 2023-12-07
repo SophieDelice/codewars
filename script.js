@@ -1,6 +1,16 @@
 
 
 
+
+// Grasshopper - Messi goals function
+// Messi is a soccer player with goals in three leagues: LaLiga , Copa del Rey , Champions
+// Complete the function to return his total number of goals in all three leagues.
+
+function goals (laLigaGoals, copaDelReyGoals, championsLeagueGoals) {
+  return laLigaGoals + copaDelReyGoals + championsLeagueGoals ;
+}
+
+// Quarter of the year
 // Given a month as an integer from 1 to 12, return to which quarter of the year it belongs as an integer number.
 // For example: month 2 (February), is part of the first quarter; month 6 (June), is part of the second quarter; 
 // and month 11 (November), is part of the fourth quarter.
