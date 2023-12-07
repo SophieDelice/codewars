@@ -1,5 +1,21 @@
 
 
+
+// Sum The Strings
+// Create a function that takes 2 integers in form of a string as an input, and outputs the sum (also as a string):
+// Notes: If either input is an empty string, consider it as zero. Inputs and the expected output will never exceed the signed 
+// 32-bit integer limit (2^31 - 1)
+
+
+function sumStr(a,b) {
+  let NumOne = Number(a); 
+  let NumTwo = Number(b); 
+    let sum = NumOne + NumTwo;
+    return sum.toString();
+  }
+  console.log(sumStr(20,5))
+
+
 // Will you make it?
 // You were camping with your friends far away from home, but when it's time to go back, 
 // you realize that your fuel is running out and the nearest pump is 50 miles away! You know that on average, 
