@@ -1,5 +1,28 @@
 
 
+
+// Given a month as an integer from 1 to 12, return to which quarter of the year it belongs as an integer number.
+// For example: month 2 (February), is part of the first quarter; month 6 (June), is part of the second quarter; 
+// and month 11 (November), is part of the fourth quarter.
+
+const quarterOf = (month) => {
+  let result = 0;
+  if ( month <= 3 ) {
+    return 1; 
+  } else if (month <= 6 ) {
+    return 2; 
+  } else if ( month <=9) {
+    return 3; 
+  } else {
+      return 4; 
+  }
+   }
+  console.log(quarterOf(2)); // Output: 1 (for February)
+console.log(quarterOf(7)); // Output: 3 (for July)
+console.log(quarterOf(11)); // Output: 4 (for November)
+
+
+
 // How good are you really?
 // There was a test in your class and you passed it. Congratulations!But you're an ambitious person. 
 // You want to know if you're better than the average student in your class.You receive an array with your peers' test scores. 
