@@ -1,5 +1,18 @@
 
 
+
+// Convert a String to a Number!
+// We need a function that can transform a string into a number. What ways of achieving this do you know?
+// Note: Don't worry, all inputs will be strings, and every string is a perfectly valid representation of an integral number.
+
+const stringToNumber = function(str){
+  // put your code here
+  return Math.floor(str); 
+  return null;
+}
+
+
+
 // The highest profit wins!
 // Story - Ben has a very simple idea to make some profit: he buys something and sells it again. Of course,
 //   this wouldn't give him any profit at all if he was simply to buy and sell it at the same price. Instead, 
