@@ -1,5 +1,20 @@
 
 
+// Keep Hydrated
+// Nathan loves cycling.
+// Because Nathan knows it is important to stay hydrated, he drinks 0.5 litres of water per hour of cycling.
+// You get given the time in hours and you need to return the number of litres Nathan will drink, rounded to the smallest value.
+
+function litres(time) {
+  total =  ( 0.5 * time); 
+   return Math.floor(total); 
+ 
+ }
+ 
+ console.log(litres(6.7))
+ console.log(litres(3))
+
+
 
 // Convert a String to a Number!
 // We need a function that can transform a string into a number. What ways of achieving this do you know?
@@ -10,8 +25,6 @@ const stringToNumber = function(str){
   return Math.floor(str); 
   return null;
 }
-
-
 
 // The highest profit wins!
 // Story - Ben has a very simple idea to make some profit: he buys something and sells it again. Of course,
