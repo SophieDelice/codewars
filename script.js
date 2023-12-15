@@ -1,6 +1,21 @@
 
 
 
+// Area or Perimeter
+// You are given the length and width of a 4-sided polygon. The polygon can either be a rectangle or a square.
+// If it is a square, return its area. If it is a rectangle, return its perimeter.
+// Example(Input1, Input2 --> Output):
+// 6, 10 --> 32
+// 3, 3 --> 9
+
+
+const areaOrPerimeter = function(l , w) {
+  // Return your answer
+  if ( l===w) return l*w; 
+  return 2*l + 2*w;
+};
+
+
 // Correct the mistakes of the character recognition software
 // Character recognition software is widely used to digitise printed texts. Thus the texts can be edited, searched and stored on a computer.
 // When documents (especially pretty old ones written with a typewriter), are digitised character recognition softwares often make mistakes.
@@ -28,8 +43,6 @@ function correct(string) {
   }
    return correctChar;
 }
-
-
 
 const string = "Dog5 ; 1gloo";
 console.log(correct(string));
