@@ -1,5 +1,40 @@
 
 
+
+// Correct the mistakes of the character recognition software
+// Character recognition software is widely used to digitise printed texts. Thus the texts can be edited, searched and stored on a computer.
+// When documents (especially pretty old ones written with a typewriter), are digitised character recognition softwares often make mistakes.
+// Your task is correct the errors in the digitised text. You only have to handle the following mistakes:
+// S is misinterpreted as 5
+// O is misinterpreted as 0
+// I is misinterpreted as 1
+// The test cases contain numbers only by mistake.
+
+
+function correct(string) {
+	// your code here
+  let correctChar = ''; 
+  for (const char of string){
+    if (char ==='5'){
+         correctChar += 'S'
+    } else if (char === '0'){
+      correctChar += 'O'
+    } else if ( char === '1'){
+      correctChar += 'I'
+    } else {
+      correctChar += char; 
+    }
+
+  }
+   return correctChar;
+}
+
+
+
+const string = "Dog5 ; 1gloo";
+console.log(correct(string));
+
+
 // Grasshopper - Check for factor
 // This function should test if the factor is a factor of base. Return true if it is a factor or false if it is not.
 // About factors : Factors are numbers you can multiply together to get another number. 2 and 3 are factors of 6 because: 2 * 3 = 6
