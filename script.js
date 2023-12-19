@@ -1,5 +1,14 @@
 
 
+// Convert a string to an array
+// Write a function to split a string and convert it into an array of words.
+
+function stringToArray(string){
+  return string.split(' ')
+
+}
+
+
 // Simple multiplication
 // This kata is about multiplying a given number by eight if it is an even number and by nine otherwise.
 
