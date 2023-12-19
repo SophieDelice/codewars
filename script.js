@@ -1,7 +1,11 @@
 
 
-
-
+// Convert a Number to a String!
+// We need a function that can transform a number (integer) into a string.
+function numberToString(num) {
+  // Return a string of the number here!
+  return num.toString()
+}
 
 // Find the first non-consecutive number
 // Your task is to find the first element of an array that is not consecutive.
