@@ -1,5 +1,18 @@
 
 
+
+// What is between?
+// Complete the function that takes two integers (a, b, where a < b) and return an array of all integers between the input parameters, including them.
+function between(a, b) {
+  // your code here
+  let result = [] ; 
+
+  for( let i= a; i<= b; i++ ){
+    result.push(i); 
+  }
+  return result; 
+}
+
 // Unique In Order
 // Implement the function unique_in_order which takes as argument a sequence and returns a list of items without any elements with 
 // the same value next to each other and preserving the original order of elements.
@@ -20,7 +33,6 @@ var uniqueInOrder=function(iterable){
 
   return unique;
 }
-
 
 // You're a square!
 // You like building blocks. You especially like building blocks that are squares. And what you even like more, is to arrange them into a square of square 
