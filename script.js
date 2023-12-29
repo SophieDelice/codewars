@@ -1,4 +1,15 @@
 
+// String repeat
+// Write a function that accepts an integer n and a string s as parameters, and returns a string of s repeated exactly n times.
+
+function repeatStr (n, s) {
+  let newS = '';
+  for ( let i= 1; i<=n; i++){
+    newS +=s ;
+  }
+  return newS; 
+}
+
 // Beginner Series #3 Sum of Numbers
 // Given two integers a and b, which can be positive or negative, find the sum of all the integers between and including them and return it.
 //  If the two numbers are equal return a or b. Note: a and b are not ordered!
