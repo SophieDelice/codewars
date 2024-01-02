@@ -1,5 +1,23 @@
 
 
+// Calculate Average 
+// Write a function which calculates the average of the numbers in a given list.
+function findAverage(array) {
+  // your code here
+  if (array.length === 0) {
+    return 0; 
+  }
+  let sum = 0; 
+  for(let i=0; i<array.length; i++){
+    sum +=array[i]; 
+  }
+  return sum / array.length;
+  
+}
+
+console.log(findAverage([1,5,6])); 
+console.log(findAverage([])); 
+
 // Make a function that does arithmetic!
 // Given two numbers and an arithmetic operator (the name of it, as a string), return the result of the two numbers having that operator 
 // used on them.a and b will both be positive integers, and a will always be the first number in the operation, and b always the second.
