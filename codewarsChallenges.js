@@ -1,5 +1,27 @@
 
 
+// Exclamation marks series #1: Remove an exclamation mark from the end of string
+// Remove an exclamation mark from the end of a string. For a beginner kata, you can assume that the input data is always a string, 
+// no need to verify it.
+// Examples
+// "Hi!"     ---> "Hi"
+// "Hi!!!"   ---> "Hi!!"
+// "!Hi"     ---> "!Hi"
+// "!Hi!"    ---> "!Hi"
+// "Hi! Hi!" ---> "Hi! Hi"
+// "Hi"      ---> "Hi"
+
+
+function remove (string) {
+  //coding and coding....
+  if (string[string.length-1] === "!") {
+    return string.slice(0,-1);
+  } else {
+    return string 
+  }
+}
+
+
 // Grasshopper - Personalized Message
 // Create a function that gives a personalized greeting. This function takes two parameters: name and owner.
 // Use conditionals to return the proper message:
