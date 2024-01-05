@@ -1,4 +1,12 @@
 
+// Return Negative
+// In this simple assignment you are given a number and have to make it negative. But maybe the number is already negative?
+
+function makeNegative(num) {
+  // Code?
+  return -Math.abs(num);
+}
+
 // Reverse List Order
 // In this kata you will create a function that takes in a list and returns a list with the reverse order.
 // Examples (Input -> Output)
