@@ -1,7 +1,43 @@
 
+// Total amount of points
+// Our football team has finished the championship.
+// Our team's match results are recorded in a collection of strings. Each match is represented by a string in the format "x:y", 
+// where x is our team's score and y is our opponents score.
+// For example: ["3:1", "2:2", "0:1", ...]
+// Points are awarded for each match as follows:
+
+// if x > y: 3 points (win)
+// if x < y: 0 points (loss)
+// if x = y: 1 point (tie)
+// We need to write a function that takes this collection and returns the number of points our team (x) 
+// got in the championship by the rules given above.
+// Notes:
+// our team always plays 10 matches in the championship
+// 0 <= x <= 4
+// 0 <= y <= 4
+
+function points(games) {
+  let point = 0;
+  for(let i =0; i<games.length; i++){
+    const x = games[i].charAt(0);
+    const y = games[i].charAt(2);
+    
+    if(x > y){
+      point+=3;
+    }
+    else if(x === y){
+      point+=1;
+    }
+    else{
+      point+=0;
+    }
+   
+  }
+  return point;
+}
+
 
 // If you can't sleep, just count sheep!!
-
 // If you can't sleep, just count sheep!!
 // Task:Given a non-negative integer, 3 for example, return a string with a murmur: "1 sheep...2 sheep...3 sheep...". 
 // Input will always be valid, i.e. no negative integers.
@@ -14,7 +50,6 @@ var countSheep = function (num){
   }
   return sheepCount; 
 }
-
 
 // Printer Errors
 // In a factory a printer prints labels for boxes. For one kind of boxes the printer has to use colors which, 
