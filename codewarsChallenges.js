@@ -1,4 +1,21 @@
 
+
+// If you can't sleep, just count sheep!!
+
+// If you can't sleep, just count sheep!!
+// Task:Given a non-negative integer, 3 for example, return a string with a murmur: "1 sheep...2 sheep...3 sheep...". 
+// Input will always be valid, i.e. no negative integers.
+
+
+var countSheep = function (num){
+  let sheepCount = ''; 
+  for (let i = 1; i <= num; i++) {
+    sheepCount += i.toString() + ' sheep...'
+  }
+  return sheepCount; 
+}
+
+
 // Printer Errors
 // In a factory a printer prints labels for boxes. For one kind of boxes the printer has to use colors which, 
 // for the sake of simplicity, are named with letters from a to m.The colors used by the printer are recorded in a control string. 
