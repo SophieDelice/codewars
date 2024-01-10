@@ -1,5 +1,18 @@
 
 
+// Powers of 2
+// Complete the function that takes a non-negative integer n as input, and returns a list of all the 
+// powers of 2 with the exponent ranging from 0 to n ( inclusive ).
+
+function powersOfTwo(n){
+  const result = [];
+  for ( let i= 0; i<=n; i++ ){
+    result.push(Math.pow(2,i))
+  }
+  return result;
+}
+
+
 // Super Duper Easy
 // Make a function that returns the value multiplied by 50 and increased by 6. If the value entered is a string it should return "Error".
 
@@ -9,7 +22,6 @@ function problem(x){
   else return (x*50) + 6;
 
 }
-
 
 // Total amount of points
 // Our football team has finished the championship.
@@ -270,7 +282,6 @@ function getGrade (s1, s2, s3) {
 
 console.log(getGrade (70,85 ,80 ));
 console.log(getGrade (79,87 ,80 ));
-
 
 
 
