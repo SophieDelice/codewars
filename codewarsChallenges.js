@@ -1,4 +1,18 @@
 
+
+// Grasshopper - Basic Function Fixer
+// Fix the function
+// I created this function to add five to any number that was passed in to it and return the new value. 
+// It doesn't throw any errors but it returns the wrong number.
+// Can you help me fix the function?
+
+function addFive(num) {
+  var total = num + 5
+  // return num
+  return total
+}
+
+
 // Array.diff
 // Your goal in this kata is to implement a difference function, which subtracts one list from another and returns the result.
 // It should remove all values from list a, which are present in list b keeping their order.
