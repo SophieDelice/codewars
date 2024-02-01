@@ -1,4 +1,18 @@
 
+
+// Removing Elements
+// Take an array and remove every second element from the array. Always keep the first element and start removing with the next element.
+
+// Example:
+// ["Keep", "Remove", "Keep", "Remove", "Keep", ...] --> ["Keep", "Keep", "Keep", ...]
+
+// None of the arrays will be empty, so you don't have to worry about that!
+
+function removeEveryOther(arr){
+  //your code here
+  return arr.filter((item, index) => index % 2=== 0)
+}
+
 // Function 2 - squaring an argument
 // Now you have to write a function that takes an argument and returns the square of it.
 // Write the "square"-function here
@@ -17,7 +31,6 @@ function addFive(num) {
   // return num
   return total
 }
-
 
 // Array.diff
 // Your goal in this kata is to implement a difference function, which subtracts one list from another and returns the result.
