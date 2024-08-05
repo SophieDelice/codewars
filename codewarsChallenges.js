@@ -1,5 +1,27 @@
 
 
+// Description:
+// Replace all vowel to exclamation mark in the sentence. aeiouAEIOU is vowel.
+
+function replace(s) {
+  return s.replaceAll('a', '!')
+          .replaceAll('e', '!')
+          .replaceAll('i', '!')
+          .replaceAll('o', '!')
+          .replaceAll('u', '!')
+          .replaceAll('A', '!')
+          .replaceAll('E', '!')
+          .replaceAll('I', '!')
+          .replaceAll('O', '!')
+          .replaceAll('U', '!');
+}
+
+// Example usage:
+const phrase = "Good Morning";
+const result = replace(phrase);
+console.log(result);
+
+
 // After a hard quarter in the office you decide to get some rest on a vacation. So you will book 
 // a flight for you and your girlfriend and try to leave all the mess behind you.
 // You will need a rental car in order for you to get around in your vacation. 
@@ -21,11 +43,6 @@ function rentalCarCost(d) {
   
   return totalperDay;
 }
-
-
-
-
-
 
 
 
